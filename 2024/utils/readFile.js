@@ -9,3 +9,10 @@ export function readInputFile(path) {
         return null;
     }
 }
+export function splitLines(text) {
+    return text.split('\n').map(line => line.trim());
+}
+
+export function splitAndTrim(text) {
+    return text.trim().split(/\s+/);
+}
